@@ -1,0 +1,230 @@
+-- all the standard tidal samples
+-- to see *all* sounds available, open new instance of estuary and do !localview audiomap
+
+s "808" <| n (run 6) -- 6 misc 808 sound
+slow 2 $ s "808bd" <| n (run 25) -- 25 rather similar 808 kicks!
+slow 2 $ s "808cy" <| n (run 25) -- 25 808 cymbals
+fast 2 $ s "808hc" <| n (run 5) -- 5 808 high congas
+fast 2 $ s "808ht" <| n (run 5) -- 5 808 high toms, bit noisy
+fast 2 $ s "808lc" <| n (run 5) -- 5 808 low congas, noisy
+fast 2 $ s "808lt" <| n (run 5) -- 5 808 low toms, noisy
+fast 2 $ s "808mc" <| n (run 5) -- 5 808 medium congas
+fast 2 $ s "808oh" <| n (run 5) -- 5 808 open hats
+slow 2 $ s "808sd" <| n (run 25) -- 25 808 snares
+s "909!4" -- just one 909 kick, but very nice
+slow 2 $ s "ab" <| n (run 12) -- nice subtle drum sounds
+s "ade" <| n (run 10) # cut 1 -- various long samples
+s "ades2" <| n (run 9) # gain 1.3 -- meh, short quiet noisy sounds
+s "ades3" <| n (run 7) -- short noisy sounds, lowish pitch
+s "ades4" <| n (run 6) -- short high pitched sounds
+loopAt 2 $ s "alex:1 alex:2" -- two acoustic drum loops
+slow 4 $ s "alphabet" <| n (shuffle 8 $ run 26) -- tts
+slow 2 $ s "amencutup" <| n (shuffle 8 $ run 32) # speed "{1,2,3}%8" -- wisott
+slow 4 $ s "armora" <| n (run 7) -- probably useless low pitched noise
+s "arp" <| n (run 2) -- two synth notes, low and high, both c#?!?
+slow 4 $ s "arpy" <| n (run 11) -- useful default synth sound, arpy:0 is C natural :)
+s "arpy" <| up "c d e f g a b c6" -- scales
+slow 2 $ s "arpy" <| up "c'maj(3,8) f'maj(3,8) ef'maj(3,8,1) bf4'maj(3,8)" -- chords
+slow 4 $ s "auto" <| n (run 11) -- various effected drum sounds
+slow 4 $ s "baa" <| n (run 7) -- sheep sounds, why?!?
+slow 4 $ s "baa2" <| n (run 7) -- rather simlar to the above? same?
+slow 2 $ s "bass" <| n (run 4) -- four short bass sounds, nasty abrupt release
+s "bass0" <| n (run 3) -- one highly distorted bass drum, plus?!?!?
+slow 8 $ s "bass1" <| n (run 30) -- thirty synth bass sounds, some long, F or C pitch
+s "bass2" <| n "[ 0 .. 4 ]" -- five aggressive tonal kicks
+slow 4 $ s "bass3!44" # n (run 11) -- eleven bass sounds, odd mix of pitches
+slow 4 $ s "bassdm" <| n (run 24) -- 24 rather similar acoustic-ish kicks
+s "bassfoo" <| n (run 3) -- same bank as bass0
+s "battles" <| n (run 2) -- very reverb military snare, hit and roll
+slow 4 $ s "bd" <| n (run 24) -- lots of electo kicks, mostly quite similar
+s "bend" <| n (run 4) -- four subtle noisy sounds
+-- Lazard - 4 O'Clock In The Morning (Promise Me - Beverley Craven)
+loopAt 16 $ s "bev:1" -- eight bar vocal keyboard/bass loop (mono)
+loopAt 16 $ s "bev:2" -- eight bar vocal keyboard/bass loop (stereo)
+s "bin" <| n (run 2) -- yup, two dustbin hits, kind of ok, could be a snare
+slow 4 $ s "birds" <| n (run 10) -- chaffinches, nightingales etc
+slow 2 $ s "birds3" <| n (run 19) -- very short noisy sounds, highish pitch
+s "bleep" <| n (run 13) -- rtd2 ish, loud!
+s "blip" <| n (run 13) -- two short pitched sounds, minor seventh apart
+slow 2 $ s "blue" <| n (run 2) -- two spoken fragments, unintelligible
+slow 2 $ s "bottle" <| n (run 13) -- short sounds, might be a bottle
+-- !setbpm 125
+slow 2 $ s "breaks125:0 breaks125:1" -- two one-bar breakbeats
+-- !setbpm 152
+slow 2 $ s "breaks152" -- one bar of amen at 152
+-- !setbpm 157
+s "breaks157" -- one bar break at 157
+-- !setbpm 165
+s "breaks165" -- one bar amen at 165
+-- !setbpm 120
+s "breath" -- one breath sound, pretty pointless
+s "bubble" <| n (run 8) -- actually sound more or less like kicks
+s "can" <| n (run 14) -- intersting percussive sounds
+s "can" <| n (run 16) # speed "0.125 1!15" -- iya
+s "casio" <| n (run 3) -- just three cheapo 'drum' sounds
+fast 2 $ s "casio" <| n "1 2 3 2" # speed 0.25 # cut 1 -- tak
+s "cb" -- omg what is that sound, so familiar! iya -- nearly same as 808:0
+s "cc" <| n (run 6) -- some loud reverby cymbals
+s "chin" <| n (run 4) # gain 2 -- very quiet synthetic clicks
+s "circus" <| n (run 3) -- three strange and pointless sounds
+s "clak" <| n (run 2) # gain 2 -- two quiet typewriters clicks, or clock ticks?
+s "click" <| n (run 4) -- four glitch sounds, maybe useful
+fast 2 $ s "clubkick" <| n (run 5) -- five similar very aggressive kicks
+s "co" <| n (run 4) -- various hats
+s "coins" # gain 2 -- very quiet coin chink
+s "control" <| n (run 2) -- two synth notes, out of tune
+slow 4 $ s "cosmicg" <| n (run 15) -- strange mix of bleeps and loud noise
+s "cp" <| n (run 2) -- two rather similar claps
+s "cr" <| n (run 6) -- six ride cymbs
+s "crow" <| n (run 4) -- two crow sounds twice
+slow 4 $ s "d" <| n (run 4) -- four misc useless sounds
+s "db" <| n (scramble 13 $ run 13) -- hmm, pretty usable dry drumkit iya
+slow 16 $ s "diphone" <| n (run 38) -- tts
+slow 8 $ s "diphone2" <| n (run 12) -- tts
+loopAt 1 $ s "dist:1" -- 16 highly distorted 1 bar drum loops
+slow 4 $ s "dork2" <| n (run 4) -- four sounds, nae idea, voices in a space?
+slow 4 $ s "dorkbot" <| n (run 2) -- people saying dorkbot, two variations
+slow 4 $ s "dr" <| n (run 42) -- loud midi drumkit, nasty cutoff at end
+s "dr2" <| n (run 6) -- six clean electro drum sounds
+fast 2 $ s "dr55" <| n (run 4) -- four dr55 sounds
+fast 2 $ s "dr_few" <| n (run 8) -- eight loud drum sounds
+s "drumtraks" <| n (run 13) -- loudish kit
+s "e" <| n (run 8) -- 8 short and quiet glitchy sounds, similar
+slow 2 $ s "east" <| n (run 9) -- 9 'world' drum sounds, ok
+slow 4 $ s "em2" <| n (run 6) -- six longer sounds, kalimba, flute, loon?
+s "erk" -- voice 'one two three hit it'
+s "f" -- one short synth note, a bit below Eb
+s "feel" <| n (run 7) -- quite nice bank of 7 drum sounds
+slow 2 $ s "feelfx" <| n (run 8) -- varied effected sounds, bit longer, ok
+s "fest" -- voice saying 'bling?' or 'berlin?'
+slow 8 $ s "fire" -- longish sample of fire sounds, low ambience
+slow 2 $ s "flick" <| n (run 17) -- mix of 17 hits couple of long Cs
+slow 16 $ s "fm" <| n (run 17) -- whole bank of loops! inc '31 seconds…'
+slow 32 $ s "foo" <| n (run 27) -- every breakbeat evah
+slow 2 $ s "future" <| n (run 17) -- synthetic hits, mostly kicks
+slow 2 $ s "gab" <| n (run 10) -- bitcrushed hits
+s "gabba" <| n (run 4) -- bitcrushed kit, four sounds
+s "gabbaloud" <| n (run 4) -- wisott
+s "gabbalouder" <| n (run 4) -- wisott
+s "glasstap" <| n (run 3) -- three nondescript short dry sounds
+s "glitch" <| n (run 8) -- iya Eb/Ab stab at 5
+s "glitch2" <| n (run 8) -- same?!?
+slow 2 $ s "gretsch" <| n (run 24) -- acoustic kit, inc flams
+slow 4 $ s "gtr" <| n (run 3) -- three long C notes elect guitar
+s "h" <| n (run 7) -- short baby sounds?
+slow 8 $ s "hand" <| n (run 17) -- mix of quiet clap sounds, some longer
+s "hardcore" <| n (run 12) -- 12 synth drum hits
+s "hardkick" <| n (run 6) -- 6 rather loud crushed kicks
+s "haw" <| n (run 6) -- 6 odd short hits
+s "hc" <| n (run 6) -- 6 closed hats
+slow 2 $ s "hh" <| n (run 13) -- actually a mix of drum sounds, quiet, ok
+slow 2 $ s "hh27" <| n (run 13) -- another quiet set of electro drum hits
+slow 2 $ s "hit" <| n (run 6) -- strange hits, 04 one quite long
+s "hmm" -- female voice saying 'hmm'
+s "ho" <| n (run 6) -- six open hats, same but of varying length
+every 2 (fast 2) $ s "hoover" <| n (shuffle 6 $ run 6) -- six loud hoover bass sounds
+s "house" <| n (run 8) -- quite a nice kit, one pitched sound at 5 ~ Ebm
+s "ht" <| n (run 16) -- 16 syn toms, rather similar
+s "if" <| n (run 5) -- five bitcrushed hits
+s "ifdrums" <| n "0!4 1!4 2!4" -- kick, hat, snare
+s "incoming" <| n (run 8) -- very electro kit, meh
+slow 2 $  s "industrial" <| n (run 32) -- iya mix of metallic percussive sounds
+s "insect" <| n (run 3) # gain 2 -- three very quiet cricket sounds
+slow 4 $ s "invaders" <| n (run 18) -- space invaders sounds, varied lengths
+s "jazz" <| n (run 8) -- totally not jazzy at all kit!
+slow 8 $ s "jungbass" <| n (run 20) -- mostly longish sub-bass kind of sounds
+s "jungle" <| n (run 13) -- quiet 'jungle' kit, amen-ish
+slow 4 $ s "juno" <| n (run 12) -- lead/pad notes and chords, C/Cminor
+slow 4 $ s "jvbass" <| n (run 13) -- selection synth notes, black notes starting Gb
+s "kicklinn!4" -- wisott
+slow 4 $ s "koy" <| n 1 -- two koyaanisqatsi long samples
+slow 4 $ s "kurt" <| n (run 7) -- vocal samples with telephone eq?
+slow 2 $ s "latibro" <| n (run 8) -- pentatonic selection of open 12th synth samples
+s "latibro" <| n (run 8) -- pentatonic collection of synth open 5th sounds
+slow 4 $ s "led" -- two and a bit sample of drums plus intro bleed
+loopAt 2 $ s "led" # end 0.5 -- not quite right
+fast 2 $ s "less" <| n (run 4) -- four fairly extreme drum sounds, kind of cool
+slow 4 $ s "lighter" <| n (run 33) -- short quiet noisy hits high pitch meh
+s "linnhats" <| n (run 6) -- wisott
+s "lt" <| n (run 16) -- 16 loud synth low toms
+s "made" <| n (run 7) -- synthetic hits, not sure how to characterise!
+slow 4 $ s "made2" -- very nasty bitcrushed long sound!
+s "mash" <| n (run 2) -- low synth tom sound and sort of glitch sound, why
+s "mash2" <| n (run 4) -- longish low syntom sounds
+s "metal" <| n (run 10) -- a tiny high metal tink at 10 pitches
+s "metal" <| n (run 10) # up (-24) -- iya
+s "miniyeah" <| n (run 4) # up (-24) -- very short glitchy sounds, better -24
+slow 4 $ s "monsterb" <| n (run 6) -- no idea
+slow 8 $ s "moog" <| n (run 7) -- long low synth notes, various pitches
+s "mouth" <| n (run 15) -- iya short vocal sounds?
+slow 2 $ s "mp3" <| n (run 4) -- harsh noise hits, horrible
+s "msg" <| n (run 9) -- subtle quiet hits
+s "mt" <| n (run 16) -- 16 medium synth toms
+slow 4 $ s "mute" <| n (run 28) -- random collection of french horn notes and doubles
+slow 4 $ s "newnotes" <| n (run 15) -- short high sine notes, black notes?
+d1 "noise" -- short quiet noise burst
+s "noise2" <| n (run 8) -- 8 short noise hits, three much louder than the others
+s "notes" <| n (run 15) -- same as newnotes, sines
+slow 4 $ s "numbers" <| n (run 9) -- female voice individual numbers
+s "oc" <| n (run 4) -- open-closed hats in single hits at four tempi
+s "odx" <| n (run 15) -- fairly aggressive kit, not very nice, new order apparently
+s "off" -- single short glitchy bass note C#
+slow 4 $ s "outdoor" <| n (run 8) -- odd ambient hits, 2 is quite long, interesting
+slow 4 $ s "pad" # n 3 -- four very assorted long sounds, not exactly pads
+slow 8 $ s "padlong" -- evolving m9 interval synth
+slow 8 $ s "pebbles" -- very long, maybe pebbles on a beach
+s "perc" <| n (run 6) -- ok set of hits
+s "peri" <| n (run 15) -- collection of synth hits, ok
+slow 2 $ s "pluck" <| n (run 17) -- pizz cb notes various, 0 is B (ish)
+s "popkick" <| n (run 10) -- kicks, but also tuned-ish in there
+s "popkick" <| n 0 -- kicks, but also tuned-ish in there Bb, ok
+slow 4 $ s "print" <| n (run 11) -- dot matrix printer sounds, ok!
+slow 4 $ s "proc" <| n (run 2) -- two computer glitch sounds?
+s "procshort" <| n (run 8) -- computer sounds edited very short, clicky
+slow 2 $ s "psr" <| n (run 30) -- odd mix of ?game sounds mostly short 0 is a kalimba
+s "psr" <| n 0 -- odd mix of ?game sounds mostly short
+slow 4 $ s "rave" <| n (run 1) -- soul shout vocals 'are you ready' etc
+s "ravemono" <| n (run 4) -- mono versions of rave shouts
+s "realclaps" <| n (run 4) -- wisott
+d1 "reverbkick!4" -- wisott
+s "rm" <| n (run 2) -- two identical retro drum machine toms
+s "rs!4" -- retro drum machine metro sound?
+slow 16 $ s "sax" <| n (run 22) -- chromatic collection of very long bari notes
+s "sd" <| n (run 2) -- two very similar retro snares, not that great!
+s "seawolf" <| n (run 3) -- noise hits
+s "sequential" <| n (run 8) -- dry acoustic-ish kit
+s "sf" <| n (run 18) -- kind of interesting collection of short hits, one C note at 0
+slow 4 $ s "sheffield" -- long ambience
+s "short" <| n (run 5) -- elctro kit sounds meh
+s "sid" <| n (run 12) -- ok, pretty usable sid sounds, melodic potential
+s "sine" <| n (run 6) -- sines with blunt envelopes, some very low
+slow 8 $ s "sitar" <| n (run 8) -- longish sitar gestures
+slow 4 $ s "space" <| n (run 18) -- strange mix of long/short sounds
+s "speakspell" <| n (run 12) # speed "{-1 2 0.25? -0.5}%6" -- short tts iya!
+slow 2 $ s "speech" <| n (run 7) -- male vocal fragments plus two short hits
+slow 4 $ s "speechless" <| n (run 10) -- bits of male tts
+s "speedupdown" <| n (run 9) -- short fragments of sound inc one loud noise burst
+slow 4 $ s "stab" <| n (run 23) -- polysynth/fm hits, sort of pitched not really
+s "stomp" <| n (run 10) -- mostly kicks
+slow 8 $ s "subroc3d" <| n (run 11) -- game sounds? some hits, one random melody
+slow 2 $ s "sundance" <| n (run 6) -- very quiet beeps and an explosion, useless
+slow 8 $ s "tabla" <| n (run 26) -- both hits and gestures
+slow 8 $ s "tabla2" <| n (run 46) -- multisampled single hits
+slow 8 $ s "tablex" <| n (run 3) -- male vocal fragments
+slow 8 $ s "tacscan" <| n (run 22) -- game sounds, some long
+s "tech" <| n (run 13) -- quiet but moderately interesting drum kit
+s "techno" <| n (run 7) -- hits, odd mix
+s "tink" <| n (run 5) # speed 0.125 -- high metallic sounds, pitched down iya
+s "tok" <| n (run 4) -- four kind of kick sounds
+slow 8 $ s "toys" <| n (run 13) -- kids toy & voice 'classical music' and 'chimes'
+slow 4 $ s "trump" <| n (run 11) -- trumpet falls one phrase, thin eq
+s "ul" <| n (run 10) -- sort of hits/kit, some character, verby, loud
+s "ulgab" <| n (run 5) -- short bitcrushed hits, usable
+s "uxay" <| n (run 3) -- one kick and two other sounds
+s "v" <| n (run 6) -- 6 mixed electronic sounds, kind of a kit
+s "voodoo" <| n (run 5) -- actually quite a nice five sound kit
+slow 2 $ s "wind" <| n (run 10) -- actually filtered white noise hits
+s "wobble" -- one subbass hit
+s "world" <| n (run 3) -- three kit hits, meh
+s "xmas" -- voice saying 'merry christmas'
+slow 2 $ s "yeah" <| n (run 31) -- big selection of short clicks and pops, usable
